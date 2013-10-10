@@ -11,7 +11,9 @@ $gitUsersPO41 = array(
 	'02.02.1982' => 'Petrov Petr shifr 859345',
 	'08.10.2013' => 'ZHEBOV ZHEB shifr 1477',
 	'21.05.2013' => 'KoryaTo Mochi',
-	
+	'01.01.2010' => 'Moskvichev'	
+
+
 	// .... и так далее
 
 
