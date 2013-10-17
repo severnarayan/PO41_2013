@@ -14,7 +14,7 @@ $gitUsersPO41 = array(
 	'01.01.2010' => 'Moskvichev',
 	'02.02.2011' => 'Moskvichev did it again',
 	'03.03.2011' => 'Moskvichev is ZHEB',
-
+	'21.12.2012' => 'Politov'
 
 	// .... и так далее
 
