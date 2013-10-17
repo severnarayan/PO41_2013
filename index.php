@@ -15,7 +15,8 @@ $gitUsersPO41 = array(
 	'02.02.2011' => 'Moskvichev did it again',
 	'03.03.2011' => 'Moskvichev is ZHEB',
 	'27.01.1994' => 'Khrabrov Igor Sergeevich',
-    
+	'04.04.2014' => 'Khrabrov is KOLDYN',
+	'11111' => 'xrustize'
 
 	// .... и так далее
 
