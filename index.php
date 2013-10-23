@@ -18,7 +18,7 @@ $gitUsersPO41 = array(
 	'04.04.2014' => 'Khrabrov is KOLDYN',
 	'11111' => 'xrustize',
 	'92.02.2015' => 'Efremov'
-	
+	'12.10.1509' => 'Khrunov is Xrustize'
 	// .... и так далее
 
 
