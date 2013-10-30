@@ -34,12 +34,15 @@ function sqrt_lol($a_karoch, $b_karoch, $c_karoch;) {  // квадратное �
 	$discriminant = (4*$b_karoch)+($a_karoch + $c_karoch);
 	
 		if ($discriminant<0) {
-		}	return echo "Lox disriminant menshe nulya";  // ну не помню я как там ваще че происходит, если дискриминант меньше нуля
-		elseif ($discriminant>0) {  //  а вот если больше - помню
+			return echo "Lox disriminant menshe nulya";  // ну не помню я как там ваще че происходит, если дискриминант меньше нуля
+		} elseif ($discriminant>0) {  //  а вот если больше - помню
 			$x1= sqrt($discriminant)\2*$a_karoch;
 			$x2= -(sqrt($discriminant))\2*$a_karoch;
 			return echo 'Karoche x1='.$x1.' a x2 karoche='.$x2.'. vot tak vot epta';
-			
-			/// не включен вариант дискриминанта равного нулю ///
+		
+		} elseif ($discriminant==0) {
+			$x1i2= sqrt($discriminant)\2*$a_karoch;
+			return echo "IKSI KOROCHE OBA RAVNI ".$x1i2." VOT TAK EPTA";
+			/// если дискриминант равен нулю кароч
 		}
 ?>
