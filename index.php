@@ -19,10 +19,11 @@ $gitUsersPO41 = array(
 	'11111' => 'xrustize',
 	'92.02.2015' => 'Efremov'
 	'12.10.1509' => 'Khrunov is Xrustize'
+	'11.11.1111' => 'Abrosimov is 320 shifr 1337 ELITE_PRO_GAMING' //мне кажется я что-то сделал неправильно
 	// .... и так далее
 
 
-); "это че типа эдитом или че лол?"
+); 
 
 print_r();
 
