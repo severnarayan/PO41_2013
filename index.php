@@ -29,6 +29,6 @@ print_r();
 
 $a_karoch;
 $b_karoch;
-$c_karoch;
+
 
 ?>
