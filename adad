@@ -1,0 +1,31 @@
+[33mcommit 1728c3251df92e7891f783dc75fdee40581b837c[m
+Author: khrabrov <khrabrov.igor@gmail.com>
+Date:   Wed Oct 30 21:48:54 2013 +0400
+
+    терь если дискриминант равен нулю короч тоже все пашет
+
+[1mdiff --git a/zheb/index.php b/zheb/index.php[m
+[1mindex 13f40c1..75a077f 100644[m
+[1m--- a/zheb/index.php[m
+[1m+++ b/zheb/index.php[m
+[36m@@ -34,12 +34,15 @@[m [mfunction sqrt_lol($a_karoch, $b_karoch, $c_karoch;) {  // квадратное [m
+ 	$discriminant = (4*$b_karoch)+($a_karoch + $c_karoch);[m
+ 	[m
+ 		if ($discriminant<0) {[m
+[31m-		}	return echo "Lox disriminant menshe nulya";  // ну не помню я как там ваще че происходит, если дискриминант меньше нуля[m
+[31m-		elseif ($discriminant>0) {  //  а вот если больше - помню[m
+[32m+[m			[32mreturn echo "Lox disriminant menshe nulya";  // ну не помню я как там ваще че происходит, если дискриминант меньше нуля[m
+[32m+[m		[32m} elseif ($discriminant>0) {  //  а вот если больше - помню[m
+ 			$x1= sqrt($discriminant)\2*$a_karoch;[m
+ 			$x2= -(sqrt($discriminant))\2*$a_karoch;[m
+ 			return echo 'Karoche x1='.$x1.' a x2 karoche='.$x2.'. vot tak vot epta';[m
+[31m-			[m
+[31m-			/// не включен вариант дискриминанта равного нулю ///[m
+[32m+[m[41m		[m
+[32m+[m		[32m} elseif ($discriminant==0) {[m
+[32m+[m			[32m$x1i2= sqrt($discriminant)\2*$a_karoch;[m
+[32m+[m			[32mreturn echo "IKSI KOROCHE OBA RAVNI ".$x1i2." VOT TAK EPTA";[m
+[32m+[m			[32m/// если дискриминант равен нулю кароч[m
+ 		}[m
+ ?>[m
+\ No newline at end of file[m

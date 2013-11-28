@@ -18,15 +18,12 @@ alert (a.innerHTML );  // тип выводит внутри хтмл))))000
 }
 //смена цвета текста
 function colorchange() { //не уверен, насчет необходимости здесь ретурна
-document.getElementById('idtext').style.color="blue";
+var a=document.getElementById('idtext').style.color="blue";
+return a;
 }
 //смена текста с заданным тегом
 function textchange() { 
-document.getElementById("idtext").innerHTML="ALLAHU AKBARU";
+var a=document.getElementById("idtext").innerHTML="ALLAHU AKBARU";
+return a;
 }
 
-function textposition() {
-var a=document.getElementById('idtext').innerHTML;;
-document.getElementById("idtext").innerHTML=document.getElementById("divid").innerHTML;
-document.getElementById("divid").innerHTML=a;
-}
