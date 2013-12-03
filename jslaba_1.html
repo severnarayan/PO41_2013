@@ -1,0 +1,73 @@
+<html>
+<head>
+
+<title></title>
+<script type="text/javascript">
+function first_quest() {
+for(var i=1; i<=2; i++) {
+alert("Количество нажатий: "+i+" !")
+}
+
+}
+function second_quest() {
+
+{
+  var x=document.getElementById("divid");
+  alert(divid.innerHTML);
+  }
+}
+function third_quest() {
+
+  var x1=document.getElementById("divid");
+  x1.innerHTML='sometext';
+
+  }
+function fourh_quest(){
+   var x2=document.getElementById("divid");
+name = document.forms["reg"].elements["name"].value;
+x2.innerHTML=name;
+alert("Вы ввели: "+name+" !");
+}
+function fifth_quest() {
+   var div1=document.getElementById('divid');
+   var div2=document.getElementById('idtext');
+   if (div1.offsetTop > div2.offsetTop)
+     document.getElementById('cont').insertBefore(div1,div2);
+   else  
+     document.getElementById('cont').insertBefore(div2,div1);
+ }
+ 
+ function sixth_quest(){
+ var div=document.getElementById('menu');
+	var x5=document.createElement("p");
+  x5.innerHTML="123";
+	 div.appendChild(x5);
+	 
+}
+setInterval(function(){sixth_quest()},1000);
+   </script>
+   </head>
+<body>
+
+ <div id='cont'>
+<div id="divid">abdef</div>
+<p id="idtext"><font onclick="this.style.color='blue'">text</font></p>
+<input type="button" onclick="first_quest()" value="Любой скрипт(с)"/>
+<input type="button" onclick="second_quest()" value="Глянуть содержимое div"/>
+<input type="button" onclick="third_quest()" value="запистаь строку sometext в переменную"/>
+<form id="reg" name="reg">
+<input text="text" id="name" name="name" />
+<input type="button" value="Отправить" onClick="fourh_quest();" />
+</form>
+<input type="button" onclick="fifth_quest()" value="Cменить div на p"/>
+
+
+<br>
+<img id="img" src="1.jpg" onclick="sixth_quest()">
+
+
+	<div id="menu">
+</div>
+
+</body>
+</html>
