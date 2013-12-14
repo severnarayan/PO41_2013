@@ -1,0 +1,31 @@
+<html>
+<title></title>
+<body>
+ <div id="divid">abdef</div>
+ <p id="idtext">text</p>
+ <script>
+var xxx = document.getElementById('divid'); // Задание 1 и 2
+alert(xxx.innerHTML);
+function pluh() // Задание 3
+{
+var pum = document.getElementById('divid');  
+plom='jsdcgdf';
+pum.innerHTML = plom;
+}
+function changeplace() // Задание 4
+{
+var x = document.getElementById("idtext").innerHTML;
+ document.getElementById("idtext").innerHTML=document.getElementById("divid").innerHTML;
+ document.getElementById("divid").innerHTML=x;
+}
+function colorchange() // Задание 5
+{
+var c = document.getElementById('idtext').style.color="red"; 
+return c;
+}
+</script>
+<input type='button' value='Click me' onclick='pluh()'/>
+<input type='button' value='Click me. Again' onclick='colorchange()'/>
+<input type='button' value='Click me. Now' onclick='changeplace()'/>
+</body>
+</html>
