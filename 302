@@ -35,4 +35,16 @@ document.getElementById("divid").innerHTML=a;
 
 //1.
 
+var xmlhttp = getXmlHttp()
+xmlhttp.open('GET', '/xhr/test.html', true); //тут включается асинхронность
+xmlhttp.onreadystatechange = function() {
+  if (xmlhttp.readyState == 4) {
+     if(xmlhttp.status == 200) {
+       alert(xmlhttp.responseText);
+         }
+  }
+};
+xmlhttp.send(null); //тут отправляется запрос
 
+
+//2.
