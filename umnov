@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>Умнов</title>
+</head>
+<body>
+<div id="divid">abdef</div>
+<p id="idtext">text</p>
+<button onClick="ch()">Поменять</button>
+<script>
+var y=document.getElementById('divid'),  //2
+trol='tra-la-la';
+y.innerHTML = trol //3
+var x=document.getElementById('idtext').style.color = "#FF0000"; //5
+/*function change() {   //4
+	var a=document.getElementById('divid');
+	var b=document.getElementById('idtext');
+	var aa=a.cloneNode(true);
+	var bb=b.cloneNode(true);
+	b.parentNode.insertBefore(aa,b);
+	a.parentNode.insertBefore(bb,a);
+	a.parentNode.removeChild(a);
+	b.parentNode.removeChild(b);
+}  */
+function ch() {
+var a=document.getElementById('idtext').innerHTML;
+document.getElementById('idtext').innerHTML=document.getElementById('divid').innerHTML;
+document.getElementById('divid').innerHTML= a;
+}
+</script>
+</body>
+</html>
