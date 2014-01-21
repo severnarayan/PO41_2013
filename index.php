@@ -31,4 +31,6 @@ $a_karoch;
 $b_karoch;
 
 
+echo "message from masterkov";
+
 ?>
