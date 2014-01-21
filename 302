@@ -1,7 +1,38 @@
-//lol tut vse budet otvechau
+//PERVAYA PRAKTICHESKAYA
 
 //1.
 
 prompt("loh ili net?");
 
-//raz dva proverka/
+//2.
+
+function tagtoperem() { 
+document.getElementById('divid');
+alert (a.innerHTML );
+}
+
+//3.
+
+function colorchange() {
+document.getElementById('idtext').style.color="blue";
+}
+
+//4.
+
+function textchange() { 
+document.getElementById("idtext").innerHTML="RazDva";
+}
+
+//5.
+
+function textposition() {
+document.getElementById('idtext').innerHTML;;
+document.getElementById("idtext").innerHTML=document.getElementById("divid").innerHTML;
+document.getElementById("divid").innerHTML=a;
+}
+
+//VTORAYA PRAKTICHESKAYA
+
+//1.
+
+
