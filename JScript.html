@@ -1,0 +1,42 @@
+﻿<html>
+<body>
+<script>
+function vote() {
+
+	var req = getXmlHttp()  
+       
+
+	var statusElem = document.getElementById('vote_status') 
+	
+	req.onreadystatechange = function() {  
+
+
+		if (req.readyState == 4) { 
+         
+
+			statusElem.innerHTML = req.statusText 
+
+			if(req.status == 200) { 
+            
+				alert("Ответ сервера: "+req.responseText);
+			}
+		
+		}
+
+	}
+
+  
+	req.open('GET', '/vote.php', true);  
+
+
+	 
+
+	req.send(null);  
+
+	statusElem.innerHTML = 'Ожидаю ответа сервера...' 
+}
+</script>
+<input value="Голосовать!" onclick="vote()" type="button" />
+<div id="vote_status">Здесь будет ответ сервера</div>
+</body>
+</html>
